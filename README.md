@@ -41,7 +41,8 @@ En los resultados se identificaron dos puertos abiertos:
 
 También se detectó la cookie `PHPSESSID` en las cabeceras HTTP, lo que indicó que el sitio probablemente utilizaba PHP.
 
-**Evidencia:** `evidencias/01-scaneo-nmap.png`
+**Evidencia:**
+![Escaneo de puertos con Nmap](evidencias/01-scaneo-nmap.png)
 
 ### 3.2. Enumeración web
 
@@ -58,7 +59,9 @@ Durante la búsqueda se identificaron dos rutas importantes:
 
 Estas rutas permitieron continuar con las pruebas, ya que se podía revisar cómo funcionaba el formulario y qué ocurría con los archivos almacenados en el servidor.
 
-**Evidencia:** `evidencias/02-gobuster-scan.png`
+**Evidencia:**
+
+![Enumeración de directorios con Gobuster](evidencias/02-gobuster-scan.png)
 
 ### 3.3. Subida de archivos
 
@@ -99,9 +102,11 @@ Con esta prueba se comprobó que el filtro de extensiones no era suficiente para
 
 **Evidencias:**
 
-- `evidencias/03-filtro-rechazado.png`
-- `evidencias/04-bypass.png`
-- `evidencias/05-reverse-shell.png`
+![Filtro de subida de archivos](evidencias/03-filtro-rechazado.png)
+
+![Prueba con extensión alternativa](evidencias/04-bypass.png)
+
+![Reverse shell obtenida](evidencias/05-reverse-shell.png)
 
 ### 3.4. Obtención de la flag de usuario
 
@@ -121,7 +126,9 @@ cat /var/www/user.txt
 
 Con esto se obtuvo la flag de usuario y se completó esta parte del laboratorio. El valor completo no se incluye en el informe.
 
-**Evidencia:** `evidencias/06-userflag.png`
+**Evidencia:**
+
+![Obtención de la flag de usuario](evidencias/06-userflag.png)
 
 ### 3.5. Escalada de privilegios
 
@@ -163,9 +170,11 @@ Una vez encontrada su ubicación, se consultó el archivo y se obtuvo la flag de
 
 **Evidencias:**
 
-- `evidencias/07-suid.png`
-- `evidencias/08-privesc-root.png`
-- `evidencias/09-root-flag.png`
+![Búsqueda de archivos con permisos SUID](evidencias/07-suid.png)
+
+![Escalada de privilegios a root](evidencias/08-privesc-root.png)
+
+![Obtención de la flag de root](evidencias/09-root-flag.png)
 
 ## 4. Vulnerabilidades encontradas
 
