@@ -170,9 +170,9 @@ Una vez encontrada su ubicación, se consultó el archivo y se obtuvo la flag de
 
 **Evidencias:**
 
-![Búsqueda de archivos con permisos SUID](evidencias/07-suid.png)
+![Búsqueda de archivos con permisos SUID](evidencias/07-suid-binaries.png)
 
-![Escalada de privilegios a root](evidencias/08-privesc-root.png)
+![Escalada de privilegios a root](evidencias/08-escalada-root.png)
 
 ![Obtención de la flag de root](evidencias/09-root-flag.png)
 
