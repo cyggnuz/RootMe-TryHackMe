@@ -102,7 +102,7 @@ Con esta prueba se comprobó que el filtro de extensiones no era suficiente para
 
 **Evidencias:**
 
-![Filtro de subida de archivos](evidencias/03-filtro-rechazado.png)
+![Filtro de subida de archivos](evidencias/03- filtro-rechazado.png)
 
 ![Prueba con extensión alternativa](evidencias/04-bypass.png)
 
